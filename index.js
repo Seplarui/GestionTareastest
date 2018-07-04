@@ -14,8 +14,9 @@ app.get('/', function(req, res) {
     // connection.connect();
     connection.query('select * from TAREASESTADOS', function(err, rows, fields) {
             if (err) throw err;
-            //console.log('El resultado es: ', rows[0]);
-            res.send(rows);
+            console.log('El resultado es: ', rows[0]);
+            //res.send(rows);
+            res.sendFile(__dirname + '/index.html');
         })
         //connection.end();
         //res.send("Hola Mundo");
