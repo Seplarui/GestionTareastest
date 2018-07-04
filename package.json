@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Seplarui/GestionTareas#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "mysql": "^2.15.0",
     "nodemon": "^1.17.5"
   }
 }
