@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
     user: 'root',
     password: ''
 });
-
+app.use(express.static('GestionTareasA'));
 
 app.get('/', function(req, res) {
 
@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
             if (err) throw err;
             console.log('El resultado es: ', rows[0]);
             //res.send(rows);
-            res.sendFile(__dirname + '/index.html');
+            res.sendFile(__dirname + '/GestionTareasA/index.html');
         })
         //connection.end();
         //res.send("Hola Mundo");
